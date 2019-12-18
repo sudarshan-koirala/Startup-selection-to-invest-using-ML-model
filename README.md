@@ -18,22 +18,27 @@ Encoding the categorical data, avoiding the dummy variable trap and splitting th
 
 But our task is to find the most correlated variable with profit. For that an optimal model using Backward Elimination is built. The significance level threshold (P value) is assumed to be 5% (0.05)
 
-The following figure shows the stepwise Backward Elimination process taken until the P value drops below 0.05 as what BE stands for.
+The following figure shows the stepwise Backward Elimination process taken until the P value drops below 0.05
 
 OLS Regression result with all the variables.
 ![OLS Regression Result 1](https://user-images.githubusercontent.com/14214659/71067927-2a730b80-217e-11ea-9283-97fc943929ae.png)
 
+
 OLS Regression result after removing the variable with the highest P value (dummy variable)
 ![OLS Regression Results 2](https://user-images.githubusercontent.com/14214659/71068119-aa997100-217e-11ea-8bb0-19d2406a2014.png)
+
 
 OLS Regression result after removing the variable with the highest P value (also the dummy variable)
 ![OLS Regression Results 3](https://user-images.githubusercontent.com/14214659/71068456-73778f80-217f-11ea-9efe-df59d1c9a05b.png)
 
+
 OLS Regression result after removing the variable with the highest P value (Administration spend)
 ![OLS Regression Results 4](https://user-images.githubusercontent.com/14214659/71068571-ac176900-217f-11ea-895d-4878b1cc8075.png)
 
+
 OLS Regression result after removing the variable with the highest P value (Marketing spend)
 ![OLS Regression Results 5](https://user-images.githubusercontent.com/14214659/71068634-ccdfbe80-217f-11ea-9bfd-ba3607d98185.png)
+
 
 Well, from the above observation one may think that as in the last step of Backward Elimination, we have one strong variable left that is R&D Spend and blindly make conclusion that it is the only one that has most impact on profit (coefficient is 0.8543).
 
